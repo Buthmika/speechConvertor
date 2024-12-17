@@ -3,20 +3,36 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Speech to Voice Converter</title>
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <header>
+            <h1 id="animated-heading">Speech to Voice Converter</h1>
+      </header>
       
       <div class="main">
-           
-            <textarea name="speech" id="text" placeholder="Paste Your Text"></textarea>
+            <textarea name="speech" id="text" placeholder="Paste Your Text . . ."></textarea>
             <div class="listen">
                   <select name="" id="select"></select>
-                  <button id="button">Listen</button>
+                  <button id="button"><img src="play.png" alt="">Listen</button>
             </div>
       </div>
+
       <script src="script.js"></script>
-      
+      <script>
+            // Split text into spans dynamically
+            const heading = document.getElementById("animated-heading");
+            const text = heading.innerText;
+            heading.innerHTML = ""; // Clear original text
+
+            // Wrap each letter in a span
+            text.split("").forEach((letter, index) => {
+                  const span = document.createElement("span");
+                  span.textContent = letter === " " ? "\u00A0" : letter; // Preserve spaces
+                  span.style.animationDelay = `${index * 0.1}s`; // Add staggered delay
+                  heading.appendChild(span);
+            });
+      </script>
 </body>
 </html>
