@@ -51,6 +51,7 @@ body {
       border-radius: 10px;
       background-color: darkmagenta;
       border: none;
+      cursor: pointer;
   }
   select{
       flex: 1;
