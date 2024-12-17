@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
       margin: 0;
       padding: 0;
@@ -34,17 +34,17 @@ header h1 {
 header h1 span {
       display: inline-block;
       opacity: 0;
-      transform: translateY(-100px); /* Initial position above */
+      transform: translateY(-100px);
       animation: fall-motion 1.5s ease-out forwards, color-change 3s infinite alternate;
 }
 
 @keyframes fall-motion {
       0% {
-            transform: translateY(-100px); /* Start above */
+            transform: translateY(-100px); 
             opacity: 0;
       }
       100% {
-            transform: translateY(0); /* Settle to the original position */
+            transform: translateY(0); 
             opacity: 1;
       }
 }
@@ -54,14 +54,13 @@ header h1 span {
             color: white;
       }
       50% {
-            color: rgb(199, 73, 199); /* Purple midway */
+            color: rgb(199, 73, 199); 
       }
       100% {
-            color: cyan; /* End color */
+            color: cyan; 
       }
 }
 
-/* Remaining styles */
 .main {
       margin: 20px auto;
       width: 800px;
