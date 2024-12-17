@@ -14,5 +14,14 @@ body {
       
    
   }
+  .main{
+      margin-left: 350px;
+      margin-top: 15%;
+      background-color: azure;
+      height: 400px;
+      width: 800px;
+      padding-left: 240px;
+      padding-top: 10px;
+  }
   
      
