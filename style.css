@@ -41,8 +41,25 @@ body {
   }
   .listen{
       display: flex;
-      gap: 250px;
+      gap: 30px;
       padding-top: 30px;
+      margin-right: 200px;
   }
-  button
+  .listen button{
+      width: 100px;
+      height: 35px;
+      border-radius: 10px;
+      background-color: darkmagenta;
+      border: none;
+  }
+  select{
+      flex: 1;
+      color: #fff;
+      height: 30px;
+      appearance: none;
+      background:rgba(7, 38, 56, 0.9);
+      margin-left: -100px;
+      border: none;
+      border-radius: 10px;
+  }
      
