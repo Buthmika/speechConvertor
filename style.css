@@ -4,3 +4,15 @@
       font-family: 'popins','sans-serif';
       box-sizing: border-box;
 }
+body {
+      background-image: url(back.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      
+   
+  }
+  
+     
